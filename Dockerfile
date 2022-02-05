@@ -1,4 +1,4 @@
-FROM fedora:33
+FROM fedora:34
 
 LABEL maintainer="Michael Buluma <me@buluma.co.ke>"
 LABEL build_date="2022-02-05"
@@ -6,7 +6,7 @@ LABEL build_date="2022-02-05"
 ENV container=docker
 
 # Enable systemd.
-RUN dnf -y install systemd && dnf clean all && \
+RUN dnf --nogpgcheck -y install systemd && dnf clean all && \
   (cd /lib/systemd/system/sysinit.target.wants/ ; for i in * ; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i ; done) ; \
   rm -f /lib/systemd/system/multi-user.target.wants/* ;\
   rm -f /etc/systemd/system/*.wants/* ;\
