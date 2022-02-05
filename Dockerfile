@@ -1,4 +1,4 @@
-FROM fedora:34
+FROM fedora:rawhide
 
 LABEL maintainer="Michael Buluma <me@buluma.co.ke>"
 LABEL build_date="2022-02-05"
