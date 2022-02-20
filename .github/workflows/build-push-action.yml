@@ -1,5 +1,5 @@
 ---
-name: 20.04, focal 
+name: Fedora 32
 
 on:
   pull_request:
@@ -13,7 +13,7 @@ on:
 jobs:
   # Test the image builds and works correctly.
   test:
-    name: Test Fedora-32
+    name: Test Fedora-34
     # runs-on: ubuntu-latest
     runs-on: ${{ matrix.os }}
     strategy:
