@@ -13,7 +13,7 @@ on:
 jobs:
   # Test the image builds and works correctly.
   test:
-    name: Test Fedora-34
+    name: Test Fedora-32
     # runs-on: ubuntu-latest
     runs-on: ${{ matrix.os }}
     strategy:
