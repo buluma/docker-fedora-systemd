@@ -16,5 +16,7 @@ RUN dnf -y install systemd && dnf clean all && \
   rm -f /lib/systemd/system/basic.target.wants/* ;\
   rm -f /lib/systemd/system/anaconda.target.wants/*
 
+RUN chmod -R 777 /tmp
+
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/sbin/init"]
