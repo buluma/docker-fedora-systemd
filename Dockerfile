@@ -1,7 +1,7 @@
 FROM fedora:35
 
 LABEL maintainer="Michael Buluma <me@buluma.me.ke>"
-LABEL build_date="2022-02-21"
+LABEL build_date="2022-03-09"
 
 ENV container=docker
 
@@ -15,8 +15,6 @@ RUN dnf -y install systemd && dnf clean all && \
   rm -f /lib/systemd/system/sockets.target.wants/*initctl* ; \
   rm -f /lib/systemd/system/basic.target.wants/* ;\
   rm -f /lib/systemd/system/anaconda.target.wants/*
-
-RUN chmod -R 777 /tmp
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/sbin/init"]
