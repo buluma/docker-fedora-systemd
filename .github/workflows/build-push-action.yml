@@ -1,5 +1,5 @@
 ---
-name: Fedora Testing
+name: Build and Push
 
 on:
   pull_request:
@@ -55,4 +55,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            buluma/fedora-systemd:testing
+            buluma/fedora-systemd:latest, buluma/fedora-systemd:testing
