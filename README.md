@@ -7,7 +7,7 @@ This Dockerfile can build containers capable to use systemd.
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/buluma/docker-fedora-systemd/Build%20and%20Push?label=build)
 ![GitHub top language](https://img.shields.io/github/languages/top/buluma/docker-fedora-systemd)
 
-![Docker Pulls](https://img.shields.io/docker/pulls/buluma/fedora-systemd?label=pulls&logo=docker&logoColor=white) 
+![Docker Pulls](https://img.shields.io/docker/pulls/buluma/fedora-systemd?label=pulls&logo=docker&logoColor=white)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/latest?logo=docker&logoColor=white&label=latest)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/rawhide?logo=docker&logoColor=white&label=rawhide)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/32?logo=docker&logoColor=white&label=32)
@@ -22,11 +22,10 @@ This repository has multiple branches that relate to Fedora versions.
 
 |Branch |Fedora Version|Docker image tag|
 |-------|--------------|----------------|
-|32     |32            |32              |
-|33     |33            |33              |
-|34     |34            |34              |
-|master |latest (33)   |latest          |
-|rawhide|rawhide (34)  |rawhide         |
+|34     |33            |34              |
+|35     |35            |35              |
+|master |latest (36)   |latest          |
+|rawhide|rawhide (37)  |rawhide         |
 
 Pull strategy
 -------------
