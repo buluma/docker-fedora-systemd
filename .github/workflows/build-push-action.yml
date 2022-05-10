@@ -1,11 +1,11 @@
 ---
-name: Fedora 34
+name: Fedora 35
 
 on:
   pull_request:
   push:
     branches:
-      - '34'
+      - '35'
   schedule:
     - cron: '10 6,15 * * *'
   workflow_dispatch:
@@ -13,7 +13,7 @@ on:
 jobs:
   # Test the image builds and works correctly.
   test:
-    name: Test Fedora-34
+    name: Test Fedora-35
     # runs-on: ubuntu-latest
     runs-on: ${{ matrix.os }}
     strategy:
@@ -24,17 +24,17 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Test building image.
-        run: docker build -t docker-fedora-34 .
+        run: docker build -t docker-fedora-35 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-fedora-34
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-fedora-35
 
   # If on master branch, build and release image.
   release:
     name: Release
     runs-on: ubuntu-latest
     needs: test
-    if: github.ref == 'refs/heads/34'
+    if: github.ref == 'refs/heads/35'
 
     steps:
       - uses: actions/checkout@v2
@@ -55,4 +55,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            buluma/fedora-systemd:34
+            buluma/fedora-systemd:35
