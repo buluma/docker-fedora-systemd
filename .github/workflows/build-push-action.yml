@@ -55,4 +55,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            buluma/fedora-systemd:38, buluma/fedora-systemd:latest
+            buluma/fedora-systemd:37, buluma/fedora:37
