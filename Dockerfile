@@ -1,7 +1,7 @@
-FROM fedora:38
+FROM fedora:39
 
 LABEL maintainer="Michael Buluma"
-LABEL build_date="2023-11-26"
+LABEL build_date="2023-12-09"
 
 ENV container=docker
 
