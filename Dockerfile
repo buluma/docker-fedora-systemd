@@ -1,7 +1,7 @@
 FROM fedora:rawhide
 
-LABEL maintainer="Michael Buluma <me@buluma.co.ke>"
-LABEL build_date="2024-02-25"
+LABEL maintainer="Michael Buluma"
+LABEL build_date="2024-03-03"
 
 ENV container=docker
 
