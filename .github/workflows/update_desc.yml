@@ -58,6 +58,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: buluma/fedora-systemd:42, buluma/fedora-systemd:latest
+          repository: buluma/fedora-systemd:41, buluma/fedora-systemd:latest
           short-description: ${{ github.event.repository.description }}
           enable-url-completion: true

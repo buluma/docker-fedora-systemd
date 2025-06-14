@@ -38,4 +38,4 @@ jobs:
         with:
           push: true
           tags: |
-            buluma/fedora-systemd:42, buluma/fedora-systemd:latest
+            buluma/fedora-systemd:41
