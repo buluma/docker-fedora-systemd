@@ -1,4 +1,4 @@
-FROM fedora:39
+FROM fedora:42
 
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2025-06-14"
