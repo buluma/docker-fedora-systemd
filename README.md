@@ -16,6 +16,7 @@ This Dockerfile can build containers capable to use systemd.
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/36?logo=docker&logoColor=white&label=36)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/38?logo=docker&logoColor=white&label=38)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/testing?logo=docker&logoColor=white&label=testing)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/buluma/fedora-systemd/41?logo=docker&logoColor=white&label=41)
 
 Branches
 --------
